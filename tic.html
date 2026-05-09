@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE GAME</title>
+    <style>
+        body {
+            background-color: rgb(0, 255, 179);
+            text-align: center;
+        }
+        .container {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .game {
+            height: 60vmin;
+            width: 60vmin;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5vmin;
+        }
+        .box {
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 1px;
+            border: none;
+            font-size: 20px;
+            color: black;
+            background-color: blue;
+        }
+        #reset {
+            padding: 1rem;
+            font-size: large;
+            border-radius: 2px;
+            border: 2px solid black; /* ✅ border alag kiya */
+        }
+        #msg {
+            color: antiquewhite;
+            font-size: 8vmin;
+        }
+        #new {
+            padding: 1rem;
+            font-size: 1.25rem;        /* ✅ rcap → rem */
+            background-color: bisque;
+            color: aliceblue;
+            border-radius: 1px;
+            border: none;
+        }
+        .hide {
+            display: none;             /* ✅ hide class define ki */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="msgc hide">            <!-- ✅ pehle se hide -->
+        <p id="msg">Winner</p>
+        <button id="new">New Game</button>
+    </div>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset">RESET</button>  <!-- id="reset" sahi hai -->
+    </main>
+
+    <script src="tictoe.js"></script>
+</body>
+</html>
